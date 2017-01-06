@@ -1,3 +1,5 @@
+import { combineReducers } from 'redux'
+
 const number = (state = 0, action) => {
   switch (action.type) {
     case 'ADD_NUMBER':
@@ -9,4 +11,8 @@ const number = (state = 0, action) => {
   }
 }
 
-export default number
+const counterApp = combineReducers({
+  number
+})
+
+export default counterApp
