@@ -2,7 +2,7 @@ import React from 'react'
 
 const View = ({ numbers }) => (
   <h1>
-    numbers
+    {numbers}
   </h1>
 )
 
